@@ -1,0 +1,14 @@
+%\chapter{Trabalhos Futuros}{}
+%\label{cap:06}
+\chapter{CONCLUSÃO}{}
+\label{cap:06}
+O sistema desenvolvido nesse trabalho apresentou um método de classificação de doenças em plantações de bananeiras utilizando \ac{RNC}, com foco na identificação da Sigatoka, uma das doenças mais prejudiciais ao cultivo da banana.
+
+Um conjunto robusto de imagens foi fundamental para preparar inicialmente o modelo. A aplicação de técnicas de ampliação de dados e pequenos ajustes de parâmetros foi realizada para melhorar o desempenho da rede, garantindo uma base sólida antes de iniciar o treinamento para a classificação de folhas infectadas.
+
+Após o treinamento da rede, iniciou-se a etapa de avaliação dos resultados, utilizando as métricas de avaliação de \ac{Ac} e \ac{MC} na fase de teste. Os resultados de classificação foram condizentes, com o melhor desempenho atingindo aproximadamente 90\% de \ac{Ac} e um erro próximo de zero. O aumento no número de épocas poderia melhorar ainda mais a precisão em \ac{RNC}s, porém, deve-se considerar o custo-benefício desse incremento, levando em conta o custo de processamento, uma vez que a AlexNet, sendo uma \ac{RNC}, demanda muito tempo de execução.
+
+
+
+Para trabalhos futuros, pretende-se aumentar o número de classes de doenças em plantações de bananeiras, para que o sistema possa identificar uma maior variedade aumentando assim a aplicabilidade e robustez do modelo. Além disso, explorar uma implementação de técnicas de pré e pós-processamento, com intuito de otimizar tanto as imagens de entrada quanto o refinamento dos resultados gerados pela rede. Essas melhorias visam elevar a precisão das \ac{RNC}s e torná-los mais eficiente. Outrossim, fazer os testes com imagens tiradas nas condições do ambiente do Projeto Formoso, oferecendo um suporte para o agricultor no monitoramento dessas doenças.
+

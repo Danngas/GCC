@@ -1,0 +1,98 @@
+\documentclass[tcc,digital]{CorujaTex}
+
+\campus{Centro Multidisciplinar de Bom Jesus da Lapa}
+
+\setor{Colegiado do Curso de Engenharia Elétrica}
+
+
+\titulo{Sistema de Classificação de doenças em plantações de bananeiras utilizando redes neurais convolucionais}
+
+\autor{Gustavo de Oliveira Carvalho}
+
+
+\orientador{Prof. Dr. Manoel Messias Silva Junior}
+
+
+\date{Maio de 2025}
+
+\begin{document}
+	
+	%\frontmatter % marca o início da parte pré-textual
+	%\pagestyle{empty}
+	\printCapa
+	
+	\printFolhaderosto
+	
+	\printfichacatalografica %Insere ficha cat. apenas para OPT=tcc
+	
+	\printFolhaAprovacao
+	
+	\printDedicatoria %Insere dedicatória apenas para OPT=tcc
+	
+	\printAgradecimentos %Insere agradecimentos apenas para OPT=tcc
+	
+	\printEpigrafe %Insere epígrafe apenas para OPT=tcc 
+	
+	\printResumo
+	
+	\printAbstract % insere abstract apenas para OPT=tcc
+	
+	\printFiguras % lista de figuras
+	
+	\printQuadros % lista de quadros
+	
+
+	\thispagestyle{empty}
+	
+	\printAcronimos % insere lista de abreviaturas, acrônimos e siglas
+	
+	\printSimbolos % insere lista de Símbolos
+	
+	\printSumario
+	
+
+	
+	\include{___textual/capitulo1}
+	\newpage \thispagestyle{empty}
+	
+	%\include{___textual/capitulo2}
+	%\newpage \thispagestyle{empty}
+	
+	\include{___textual/capitulo3}
+	\newpage \thispagestyle{empty}
+	
+	\include{___textual/capitulo4}
+	\newpage \thispagestyle{empty}
+	
+	\include{___textual/capitulo5}
+	\newpage \thispagestyle{empty}
+	
+	\include{___textual/capitulo6}
+	\newpage \thispagestyle{empty}
+	
+	%\backmatter % marca o início da parte pós-textual
+ 	%\bibliographystyle{abntex2-alf}
+ 	\bibliography{___postextual/CorujaTexReferencias}
+ 	\addcontentsline{toc}{chapter}{REFERÊNCIAS} % lista as referências no sumário
+ 	\newpage \thispagestyle{empty}
+ 	
+ 	\appendix
+ 	
+ 	\include{___postextual/apendice1.tex}	
+ 	\newpage \thispagestyle{empty}
+ 	
+ 	\anexo
+ 	
+ 	\include{___postextual/anexo1.tex}
+ 	\newpage \thispagestyle{empty}
+ 	
+ 	\colophon
+\end{document}	
+
+
+
+%	\input{filename} imports the commands from filename.tex into the target file; it's equivalent to typing all the commands from filename.tex right into the current file where the \input line is.
+%	
+%	\include{filename} essentially does a \clearpage before and after \input{filename}, together with some magic to switch to another .aux file, and omits the inclusion at all if you have an \includeonly without the filename in the argument. This is primarily useful when you have a big project on a slow computer; changing one of the include targets won't force you to regenerate the outputs of all the rest.
+%	
+%\input{Lista_AAS.tex} % inserir lista de abreviaturas, acrônimos e siglas
